@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAuthor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Author>
+    <FirstName>John</FirstName>
+    <LastName>Richter</LastName>
+  </Author>
+  <Author>
+    <FirstName>Bjorne</FirstName>
+    <LastName>Straustrup</LastName>
+  </Author>
+  <Author>
+      <FirstName>Stiv</FirstName>
+      <LastName>Makkonel</LastName>
+    </Author>
+</ArrayOfAuthor>

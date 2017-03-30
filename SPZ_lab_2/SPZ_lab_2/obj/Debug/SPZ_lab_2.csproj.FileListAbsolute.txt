@@ -1,0 +1,16 @@
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\bin\Debug\SPZ_lab_2.exe.config
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\bin\Debug\SPZ_lab_2.exe
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\bin\Debug\SPZ_lab_2.pdb
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.csprojResolveAssemblyReference.cache
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Properties.Resources.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.csproj.GenerateResource.Cache
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.exe
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.pdb
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.BooksForm.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.MainForm.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.EditBook.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.AuthorsForm.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.EditAuthor.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.PublishersForm.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.EditPublisher.resources
+E:\SPZ_lab_2_var_8\SPZ_lab_2\SPZ_lab_2\obj\Debug\SPZ_lab_2.Forms.Statistics.resources
