@@ -19,16 +19,29 @@ namespace SPZ_lab_2.Forms
         {
             InitializeComponent();
             Init();
+
+            AppController.Instance.PublishersController.OnPublishersChanged += OnDataChanged;
+            AppController.Instance.AuthorsController.OnAuthorsChanged += OnDataChanged;
+            AppController.Instance.BookController.OnBooksChanged += OnDataChanged;
+
+        }
+
+        private void OnDataChanged(object sender, EventArgs eventArgs)
+        {
+            Init();
         }
 
         public void Init()
         {
             List<Book> books = AppController.Instance.BookController.Books;
-            BooksByAuthorsChart.DataSource = books;
-            BooksByAuthorsChart.Series["BooksByAuthors"].XValueMember = "Author";
-            BooksByAuthorsChart.Series["BooksByAuthors"].XValueType = ChartValueType.String;
-            BooksByAuthorsChart.Series["BooksByAuthors"].YValueMembers = "Total";
-            BooksByAuthorsChart.Series["BooksByAuthors"].YValueType = ChartValueType.Int32;
+            List<Author> authors = AppController.Instance.AuthorsController.Authors;
+            List<Publisher> publishers = AppController.Instance.PublishersController.Publishers;
+
+            DataTable dt_authors = new DataTable();
+            Dictionary<Author, int> booksByAuthor = authors.ToDictionary(auth => auth, auth => books.Count(book => book.Author == auth));
+            Dictionary<Publisher, int> booksByPublisher = publishers.ToDictionary(publisher => publisher, publisher => books.Count(book => book.Publisher == publisher));
+            BooksByAuthorsView.DataSource = booksByAuthor.ToList();
+            BooksByPublisherView.DataSource = booksByPublisher.ToList();
         }
 
     }

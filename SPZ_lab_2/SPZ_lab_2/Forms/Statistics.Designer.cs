@@ -28,47 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.BooksByAuthorsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.BooksByAuthorsChart)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BooksByAuthorsView = new System.Windows.Forms.DataGridView();
+            this.BooksByPublisherView = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.BooksByAuthorsView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BooksByPublisherView)).BeginInit();
             this.SuspendLayout();
             // 
-            // BooksByAuthorsChart
+            // label1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.BooksByAuthorsChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.BooksByAuthorsChart.Legends.Add(legend1);
-            this.BooksByAuthorsChart.Location = new System.Drawing.Point(96, 125);
-            this.BooksByAuthorsChart.Name = "BooksByAuthorsChart";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "BooksByAuthors";
-            this.BooksByAuthorsChart.Series.Add(series1);
-            this.BooksByAuthorsChart.Size = new System.Drawing.Size(300, 300);
-            this.BooksByAuthorsChart.TabIndex = 0;
-            this.BooksByAuthorsChart.Text = "chart1";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(137, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Books by authors";
+            // 
+            // BooksByAuthorsView
+            // 
+            this.BooksByAuthorsView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BooksByAuthorsView.Location = new System.Drawing.Point(29, 76);
+            this.BooksByAuthorsView.Name = "BooksByAuthorsView";
+            this.BooksByAuthorsView.Size = new System.Drawing.Size(364, 425);
+            this.BooksByAuthorsView.TabIndex = 2;
+            // 
+            // BooksByPublisherView
+            // 
+            this.BooksByPublisherView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BooksByPublisherView.Location = new System.Drawing.Point(545, 76);
+            this.BooksByPublisherView.Name = "BooksByPublisherView";
+            this.BooksByPublisherView.Size = new System.Drawing.Size(364, 425);
+            this.BooksByPublisherView.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(653, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Books by publisher";
             // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 513);
-            this.Controls.Add(this.BooksByAuthorsChart);
+            this.Controls.Add(this.BooksByPublisherView);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.BooksByAuthorsView);
+            this.Controls.Add(this.label1);
             this.Name = "Statistics";
             this.Text = "Statistics";
-            ((System.ComponentModel.ISupportInitialize)(this.BooksByAuthorsChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BooksByAuthorsView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BooksByPublisherView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart BooksByAuthorsChart;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView BooksByAuthorsView;
+        private System.Windows.Forms.DataGridView BooksByPublisherView;
+        private System.Windows.Forms.Label label2;
     }
 }

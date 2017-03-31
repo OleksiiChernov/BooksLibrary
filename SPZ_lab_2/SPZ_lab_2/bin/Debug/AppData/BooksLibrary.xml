@@ -1,76 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Book>
-    <Title>CLR via C#</Title>
-    <Author>
-      <FirstName>Jonh</FirstName>
-      <LastName>Richter</LastName>
-    </Author>
-    <Publisher>
-      <Name>Microsoft Press</Name>
-    </Publisher>
-    <Year>2012</Year>
-  </Book>
-  <Book>
-    <Title>C++</Title>
-    <Author>
-      <FirstName>Bjorne</FirstName>
-      <LastName>Straustrup</LastName>
-    </Author>
-    <Publisher>
-      <Name>Microsoft Press</Name>
-    </Publisher>
-    <Year>2013</Year>
-  </Book>
-  <Book>
-    <Title>Ideal code</Title>
-    <Author>
-      <FirstName>Stiv</FirstName>
-      <LastName>Makkonel</LastName>
-    </Author>
-    <Publisher>
-      <Name>Microsoft Press</Name>
-    </Publisher>
-    <Year>2011</Year>
-  </Book>
-  <Book>
-    <Title>C# 6.0</Title>
+    <Title>C#</Title>
     <Author>
       <FirstName>John</FirstName>
       <LastName>Richter</LastName>
-    </Author>
-    <Publisher>
-      <Name>MicrosoftPress</Name>
-    </Publisher>
-    <Year>2016</Year>
-  </Book>
-  <Book>
-    <Title>C# 6.0</Title>
-    <Author>
-      <FirstName>John</FirstName>
-      <LastName>Richter</LastName>
-    </Author>
-    <Publisher>
-      <Name>MicrosoftPress</Name>
-    </Publisher>
-    <Year>2016</Year>
-  </Book>
-  <Book>
-    <Title>C# 6.0</Title>
-    <Author>
-      <FirstName>John</FirstName>
-      <LastName>Richter</LastName>
-    </Author>
-    <Publisher>
-      <Name>MicrosoftPress</Name>
-    </Publisher>
-    <Year>2016</Year>
-  </Book>
-  <Book>
-    <Title>C++17</Title>
-    <Author>
-      <FirstName>Bjorne</FirstName>
-      <LastName>Straustrup</LastName>
     </Author>
     <Publisher>
       <Name>MicrosoftPress</Name>
@@ -78,25 +12,36 @@
     <Year>2017</Year>
   </Book>
   <Book>
-    <Title>TestBook</Title>
+    <Title>C#</Title>
     <Author>
-      <FirstName>Bjorne</FirstName>
-      <LastName>Straustrup</LastName>
+      <FirstName>John</FirstName>
+      <LastName>Richter</LastName>
     </Author>
     <Publisher>
       <Name>MicrosoftPress</Name>
     </Publisher>
-    <Year>2015</Year>
+    <Year>2013</Year>
   </Book>
   <Book>
-    <Title>TestBook2</Title>
+    <Title>C++</Title>
     <Author>
-      <FirstName>Bjorne</FirstName>
-      <LastName>Straustrup</LastName>
+      <FirstName>John</FirstName>
+      <LastName>Richter</LastName>
     </Author>
     <Publisher>
       <Name>MicrosoftPress</Name>
     </Publisher>
-    <Year>2015</Year>
+    <Year>2014</Year>
+  </Book>
+  <Book>
+    <Title>Common</Title>
+    <Author>
+      <FirstName>Stiv</FirstName>
+      <LastName>Makkonel</LastName>
+    </Author>
+    <Publisher>
+      <Name>MicrosoftPress</Name>
+    </Publisher>
+    <Year>2011</Year>
   </Book>
 </ArrayOfBook>

@@ -25,11 +25,16 @@ namespace SPZ_lab_2.Forms
         {
             AuthorsGrid.DataSource = AppController.Instance.AuthorsController.Authors;
             AuthorsGrid.ReadOnly = true;
+
             DataGridViewButtonColumn column = new DataGridViewButtonColumn();
             column.Name = "Edit";
             column.Text = "Edit";
             column.UseColumnTextForButtonValue = true;
-            AuthorsGrid.Columns.Add(column);
+
+            if (AuthorsGrid.Columns[0].GetType() != typeof(DataGridViewButtonColumn))
+            {
+                AuthorsGrid.Columns.Add(column);
+            }
         }
 
         private void AuthorsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)

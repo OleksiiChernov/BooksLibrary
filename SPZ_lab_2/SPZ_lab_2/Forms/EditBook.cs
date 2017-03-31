@@ -34,11 +34,20 @@ namespace SPZ_lab_2.Forms
             TitleLabel.Text = book.Title;
 
             AuthorComboBox.DataSource = AppController.Instance.AuthorsController.Authors;
-            int authorIndex = AppController.Instance.AuthorsController.Authors.IndexOf(book.Author);
+            int authorIndex = 0;
+            foreach (var auth in AppController.Instance.AuthorsController.Authors.Where(auth => auth == book.Author))
+            {
+                authorIndex = AppController.Instance.AuthorsController.Authors.IndexOf(auth);
+            }
             AuthorComboBox.SelectedIndex = authorIndex;
 
             PublisherComboBox.DataSource = AppController.Instance.PublishersController.Publishers;
-            PublisherComboBox.SelectedIndex = AppController.Instance.PublishersController.Publishers.IndexOf(book.Publisher);
+            int publisherIndex = 0;
+            foreach (var pub in AppController.Instance.PublishersController.Publishers.Where(pub => pub == book.Publisher))
+            {
+                publisherIndex = AppController.Instance.PublishersController.Publishers.IndexOf(pub);
+            }
+            PublisherComboBox.SelectedIndex = publisherIndex;
 
             YearUpDown.Value = book.Year;
             _isEditMode = true;

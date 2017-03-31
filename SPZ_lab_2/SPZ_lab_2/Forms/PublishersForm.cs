@@ -29,7 +29,10 @@ namespace SPZ_lab_2.Forms
             column.Name = "Edit";
             column.Text = "Edit";
             column.UseColumnTextForButtonValue = true;
-            PublishersGrid.Columns.Add(column);
+            if (PublishersGrid.Columns[0].GetType() != typeof(DataGridViewButtonColumn))
+            {
+                PublishersGrid.Columns.Add(column);
+            }
         }
 
         private void AuthorsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)

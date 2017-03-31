@@ -15,5 +15,14 @@ namespace SPZ_lab_2.Models
         {
             return FirstName + " " + LastName;
         }
+
+        public static bool operator ==(Author obj1, Author obj2)
+        {
+            return obj1.FirstName == obj2.FirstName && obj1.LastName == obj2.LastName;
+        }
+        public static bool operator !=(Author obj1, Author obj2)
+        {
+            return !(obj1 == obj2);
+        }
     }
 }

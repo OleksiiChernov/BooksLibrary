@@ -31,7 +31,10 @@ namespace SPZ_lab_2.Forms
             column.Name = "Edit";
             column.Text = "Edit";
             column.UseColumnTextForButtonValue = true;
-            BooksGrid.Columns.Add(column);
+            if (BooksGrid.Columns[0].GetType() != typeof(DataGridViewButtonColumn))
+            {
+                BooksGrid.Columns.Add(column);
+            }
         }
 
         private void BooksGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
